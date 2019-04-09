@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:gravity="left|center_vertical"
+    android:paddingTop="5dp">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/listview_account_number"
+       android:layout_marginLeft="40dp"
+       android:layout_marginRight="60dp"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:id="@+id/listview_account_car_icon"
+        android:layout_marginRight="20dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview_account_car_number"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listview_account_car_person"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:text="余额："
+        android:id="@+id/listview_account_balance"/>
+    <CheckBox
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview_account_chb_recharge"
+        android:layout_marginRight="40dp"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:id="@+id/listview_account_btn_recharge"
+        android:text="充值"/>
+</LinearLayout>

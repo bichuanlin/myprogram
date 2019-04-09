@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.Fragment2">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@android:color/darker_gray">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bus_1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/image_fragment2_top"
+        android:scaleType="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_fragment2_bus_time"
+        android:textSize="16dp"
+        android:text="901公交汽车     首：6:00   末：21:00"
+        android:layout_toRightOf="@id/image_fragment2_top"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_fragment2_bus_capacity"
+        android:textSize="16dp"
+        android:layout_toLeftOf="@+id/btn_fragment2_detail"
+        android:layout_alignBaseline="@+id/btn_fragment2_detail"
+        android:layout_marginRight="30dp"
+        android:text="当前承载能力："/>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_fragment2_detail"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:text="详情"/>
+</RelativeLayout>
+<ExpandableListView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp"
+    android:divider="@android:color/darker_gray"
+    android:dividerHeight="1dp"
+    android:id="@+id/expListView_fragment2"></ExpandableListView>
+</LinearLayout>

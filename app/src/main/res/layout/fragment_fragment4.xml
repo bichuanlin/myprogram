@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.fragment4.Fragment4">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/tv_title_fragment4"
+        android:text="车辆违章查询"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_car_number_fragment4"
+        app:layout_constraintBottom_toTopOf="@id/tv_car_number_fragment4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_car_number_fragment4"
+        android:textSize="20sp"
+        android:text="车牌号：鲁"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_fragment4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/et_car_number_fragment4"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <EditText
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_car_number_fragment4"
+        app:layout_constraintLeft_toRightOf="@+id/tv_car_number_fragment4"
+        app:layout_constraintRight_toLeftOf="@id/btn_search_fragment4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_car_number_fragment4"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="查询"
+        android:id="@+id/btn_search_fragment4"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/et_car_number_fragment4"
+        app:layout_constraintBaseline_toBaselineOf="@+id/et_car_number_fragment4"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</android.support.constraint.ConstraintLayout>
